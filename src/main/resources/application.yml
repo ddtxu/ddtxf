@@ -15,7 +15,8 @@ xfxh:
   appId:
   # 用于权限验证，从服务接口认证信息中获取
   apiSecret:
-  # 用于权限验证，从服务接口认证信息中获取
+  # 用于权限验证，从服务接口认证信息中获
   apiKey:
 server:
   port: 8013
+  synchronized: true
