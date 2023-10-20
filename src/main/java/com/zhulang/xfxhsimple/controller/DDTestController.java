@@ -192,7 +192,6 @@ public class DDTestController {
             List<String> list = Arrays.asList("欢迎进入顶顶通对接讯飞大模型的程序", "请问您有什么问题想向我提问的呢？");
             resultMap.put("playbacks", list);
 //            resultMap.put("sound_file_dir", "/ddt/fs/sounds/cti/acd");
-            resultMap.put("pre_tts_text", Arrays.asList("徐先生", "2023年10月10日"));
             resultMap.put("quickresponse", true);
             resultMap.put("log", "create succeed");
 
