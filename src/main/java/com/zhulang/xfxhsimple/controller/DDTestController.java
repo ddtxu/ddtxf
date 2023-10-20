@@ -60,8 +60,8 @@ public class DDTestController {
                 resultMap.put("privatedata", "test");
                 List<String> list = Arrays.asList("欢迎进入顶顶通对接讯飞大模型的程序", "请问您有什么问题想向我提问的呢？");
                 resultMap.put("playbacks", list);
+                //播放等待音乐
 //            resultMap.put("sound_file_dir", "/ddt/fs/sounds/cti/acd");
-                resultMap.put("pre_tts_text", Arrays.asList("徐先生", "2023年10月10日"));
                 resultMap.put("quickresponse", true);
                 resultMap.put("log", "create succeed");
             } else if ("input".equals(method)) {
