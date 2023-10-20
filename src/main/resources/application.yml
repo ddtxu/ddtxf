@@ -12,11 +12,11 @@ xfxh:
   # 允许同时连接大模型的 websocket 数，如果是普通（免费）用户为 2，超过这个数连接响应会报错，具体参考官网。
   QPS: 2
   # 用于权限验证，从服务接口认证信息中获取
-  appId:
+  appId: 5a519267
   # 用于权限验证，从服务接口认证信息中获取
-  apiSecret:
-  # 用于权限验证，从服务接口认证信息中获
-  apiKey:
+  apiSecret: eb5e9960a180f616c0cae7a4df9f7b8a
+  # 用于权限验证，从服务接口认证信息中获取
+  apiKey: e6036a693b8a1ca4c5c7e139bba4889c
 server:
   port: 8013
   synchronized: true
