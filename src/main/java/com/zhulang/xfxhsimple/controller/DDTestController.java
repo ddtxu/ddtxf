@@ -162,7 +162,7 @@ public class DDTestController {
 
     private synchronized Map<String, Object> syflow(Map<String, Object> tokenMap){
         String asrAddr = "127.0.0.1:9988";
-        String ttsAddr = "ws://129.211.24.206:9989/tts";
+        String ttsAddr = "ws://127.0.0.1:9989/tts";
         Long timestamp = (Long) tokenMap.get("timestamp");
         String method = (String) tokenMap.get("method");
         String callid = (String) tokenMap.get("callid");
@@ -180,7 +180,7 @@ public class DDTestController {
             resultMap.put("argument", "'1' '64' '0' '0.8' '" + asrAddr + "' '120' '800' '5000' '20000' '' '' '" + appid + "' '1' '" + date + "' 'wav'");
 
             ttsMap.put("ttsurl", ttsAddr);
-            ttsMap.put("ttsvoicename", "");
+            ttsMap.put("ttsvoicename", "x4_lingxiaoxuan_en");//
             ttsMap.put("ttsconfig", "");
             ttsMap.put("ttsengine", "");
             ttsMap.put("ttsvolume", 0);
