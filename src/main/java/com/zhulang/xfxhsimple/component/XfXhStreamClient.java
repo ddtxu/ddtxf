@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSONObject;
 import com.zhulang.xfxhsimple.config.XfXhConfig;
 import com.zhulang.xfxhsimple.dto.MsgDTO;
 import com.zhulang.xfxhsimple.dto.RequestDTO;
+import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import okhttp3.*;
 import org.springframework.beans.factory.annotation.Value;
@@ -23,12 +24,13 @@ import java.util.*;
  */
 @Component
 @Slf4j
+@Data
 public class XfXhStreamClient {
     @Resource
     private XfXhConfig xfXhConfig;
 
     @Value("${xfxh.QPS}")
-    private int connectionTokenCount;
+    private Integer connectionTokenCount;
 
     /**
      * 获取令牌
@@ -46,7 +48,7 @@ public class XfXhStreamClient {
      * @return 是否操作成功
      */
     public synchronized boolean operateToken(int status) {
-        if (status == GET_TOKEN_STATUS) {
+        if (status == 0) {
             // 获取令牌
             if (connectionTokenCount != 0) {
                 // 说明还有令牌，将令牌数减一
@@ -143,5 +145,6 @@ public class XfXhStreamClient {
         requestDTO.setPayload(new RequestDTO.PayloadDTO(new RequestDTO.PayloadDTO.MessageDTO(msgList)));
         return requestDTO;
     }
+
 
 }
