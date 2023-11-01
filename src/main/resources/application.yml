@@ -18,5 +18,5 @@ xfxh:
   # 用于权限验证，从服务接口认证信息中获取
   apiKey:
 server:
-  port: 8013
+  port: 8015
   synchronized: true
