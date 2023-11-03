@@ -1,15 +1,31 @@
-实现目标 ：希望能够以语音的形式向提问机器人提出问题，机器人语音回答提的问题
+电话机器人对接讯飞星火认知大模型的例子
 ===
 
-### 1. 准备工作
+## 介绍
 
-        1. 安装了FreeSWITCH   http://www.ddrj.com/callcenter/userguide.html
-        2. 安装了(mod_cti基于FreeSWITCH)-语音识别（asr）接口  可在该网站申请相关接口测试 http://www.ddrj.com/callcenter/asr.html
-        3. 下载ccAdmin和sipphone(方便测试)  可在该网站下载 http://www.ddrj.com/callcenter/gui.html  http://www.ddrj.com/sipphone/index.html
-        4. 申请了免费的星火大模型套餐，获取到相关key 和相关信息，代码里面要填写的  从该地址可申请获取到相关的key https://xinghuo.xfyun.cn/sparkapi?scr=price
-### 2. java 后端接口说明
+自chatgpt3.5发布以来，各种大模型飞速发展，各行各业都有接入大模型的需求，呼叫中心行业非常适合通过接入大模型用AI来回答用户的各种咨询，降低人里资源，使用顶顶通呼叫中心中间件，可以非常简单容易的让电话机器人系统，呼叫中心系统快速接入各种大模型，本例子演示了如果使用顶顶通呼叫中心中间件接入讯飞星火认知大模型。
 
-         1. 项目说明
-               这个项目是使用java 代码实现与讯飞大模型对接，实现机器人问答功能。
-### 3. 下载代码后请将在火星大模型获得的key 等相关内容填写到 application.yml文件中
-### 4. 可围观CSDN https://blog.csdn.net/qq_52528295/article/details/133741976?spm=1001.2014.3001.5502  里有详细介绍和解释
+
+
+## 流程图
+
+
+
+## 测试方法
+
+可以联系顶顶通测试效果，测试效果视频请看
+
+## 用法说明
+	准备工作
+		1. 配置了java 环境，安装了Maven 环境。
+		2. 安装了FreeSWITCH。
+		3. 安装了顶顶通语音接口。
+		4. 下载ccAdmin和sipphone。
+		5. 申请了讯飞模型的key 和相关信息。
+
+
+## 相关资料
+
+1. 顶顶通呼叫中心中间件接口文档  http://www.ddrj.com/callcenter/httpflow.html
+2. java程序和顶顶通呼叫中心中间件 对接方法 https://blog.csdn.net/qq_52528295/article/details/133741976
+3. 讯飞星火认知大模型接口文档  https://xinghuo.xfyun.cn/sparkapi
